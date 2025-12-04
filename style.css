@@ -338,10 +338,14 @@ img {
 }
 
 .project-card {
+    display: block;
     background-color: transparent;
     border-radius: 0;
-    overflow: hidden;
+    overflow: visible;
     transition: var(--transition);
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
 }
 
 .project-image {
@@ -350,6 +354,7 @@ img {
     border-radius: 12px;
     margin-bottom: 1.5rem;
     background-color: #f0f0f0;
+    transition: var(--transition);
 }
 
 .project-image img {
@@ -372,6 +377,11 @@ img {
     font-weight: 500;
     margin-bottom: 0.5rem;
     color: var(--text-color);
+    transition: var(--transition);
+}
+
+.project-card:hover .project-title {
+    color: var(--accent-color);
 }
 
 .project-description {
@@ -383,6 +393,11 @@ img {
 .project-links {
     display: flex;
     gap: 10px;
+}
+
+.project-links .btn {
+    cursor: pointer;
+    pointer-events: none;
 }
 
 /* Contact Section */
