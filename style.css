@@ -191,6 +191,7 @@ img {
     width: 100%;
     display: flex;
     justify-content: flex-end;
+    z-index: -1;
 }
 
 .image_cover {
