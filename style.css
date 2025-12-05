@@ -204,6 +204,7 @@ img {
     background-image: url('https://cdn.prod.website-files.com/68fb9560daed27437b3b38ad/690c0b16ffe5c83cc0d6e5b2_aragonai-32e66017-f94f-4170-bf74-9d95827320b6.jpeg');
     background-size: cover;
     background-position: center;
+    z-index: -1;
 }
 
 .image_cover::before {
