@@ -1,3 +1,31 @@
+// Dark Mode Toggle
+(function () {
+    const root = document.documentElement;
+    const saved = localStorage.getItem('theme') || 'light';
+
+    function applyTheme(theme) {
+        root.setAttribute('data-theme', theme);
+        const moon = document.querySelector('.icon-moon');
+        const sun = document.querySelector('.icon-sun');
+        if (moon && sun) {
+            moon.style.display = theme === 'dark' ? 'none' : 'block';
+            sun.style.display = theme === 'dark' ? 'block' : 'none';
+        }
+    }
+
+    applyTheme(saved);
+
+    const btn = document.querySelector('.theme-toggle');
+    if (btn) {
+        btn.addEventListener('click', function () {
+            const current = root.getAttribute('data-theme') || 'light';
+            const next = current === 'dark' ? 'light' : 'dark';
+            localStorage.setItem('theme', next);
+            applyTheme(next);
+        });
+    }
+})();
+
 // Register ScrollTrigger
 gsap.registerPlugin(ScrollTrigger);
 
