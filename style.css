@@ -662,27 +662,15 @@ img {
     display: block;
 }
 
-.hero-img-dark {
+.project-hero-image .hero-img-dark {
     display: none;
 }
 
-[data-theme="dark"] .hero-img-light {
+[data-theme="dark"] .project-hero-image .hero-img-light {
     display: none;
 }
 
-[data-theme="dark"] .hero-img-dark {
-    display: block;
-}
-
-.hero-img-dark {
-    display: none;
-}
-
-[data-theme="dark"] .hero-img-light {
-    display: none;
-}
-
-[data-theme="dark"] .hero-img-dark {
+[data-theme="dark"] .project-hero-image .hero-img-dark {
     display: block;
 }
 
