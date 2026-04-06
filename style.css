@@ -662,6 +662,30 @@ img {
     display: block;
 }
 
+.hero-img-dark {
+    display: none;
+}
+
+[data-theme="dark"] .hero-img-light {
+    display: none;
+}
+
+[data-theme="dark"] .hero-img-dark {
+    display: block;
+}
+
+.hero-img-dark {
+    display: none;
+}
+
+[data-theme="dark"] .hero-img-light {
+    display: none;
+}
+
+[data-theme="dark"] .hero-img-dark {
+    display: block;
+}
+
 .project-section {
     padding: 60px 0;
 }
