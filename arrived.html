@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrived - Orryn Echols</title>
+    <link rel="stylesheet" href="style.css?v=2">
+    <script>document.documentElement.setAttribute('data-theme', localStorage.getItem('theme') || 'light');</script>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">Orryn Echols</a>
+            <ul class="nav-links">
+                <li><a href="index.html#home" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="index.html#projects" class="nav-link">Projects</a></li>
+                <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="theme-toggle" aria-label="Toggle dark mode">
+                <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+            </button>
+        </div>
+    </nav>
+
+    <main class="project-detail">
+        <!-- Hero Section -->
+        <section class="project-hero">
+            <div class="container">
+                <a href="index.html#projects" class="back-link">← Back to Projects</a>
+                <div class="project-hero-image">
+                    <img src="assets/arrived-hero.png" alt="Arrived Hero" class="hero-img-light">
+                    <img src="assets/arrived-hero-dark.png" alt="Arrived Hero" class="hero-img-dark">
+                </div>
+            </div>
+        </section>
+
+        <!-- Project Overview -->
+        <section class="project-section">
+            <div class="container project-container">
+                <h3 class="project-section-title">Project Overview</h3>
+                <p class="project-text">
+                    This project focused on designing a mobile app experience for a privacy-respecting arrival safety
+                    platform. The app allows families and friends to share trips, check in, and get notified when
+                    someone arrives safely. My goal was to create a modern, intuitive interface that supports a seamless
+                    safety journey—from onboarding to setting alerts and responding.
+                </p>
+            </div>
+        </section>
+
+        <!-- Project Goals -->
+        <section class="project-section">
+            <div class="container project-container">
+                <h3 class="project-section-title">Project Goals</h3>
+            <ul class="project-list">
+                    <li>Streamline safety check-ins with intuitive navigation and clear status indicators</li>
+                    <li>Design for flexible, consent-based location sharing and group management</li>
+                    <li>Make arrival alerts, schedules, and emergency tools easy to set up and adjust</li>
+                    <li>Create a visual system that feels calm, trustworthy, and responsive in stressful moments</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Task List & User Flow -->
+        <section class="project-section">
+            <div class="container project-container">
+                <h3 class="project-section-title">Task List & User Flow</h3>
+                <p class="project-text">
+                    I identified essential user tasks and mapped a journey flow diagram to plan the architecture and key
+                    interactions.
+                </p>
+                <h4 class="project-subsection-title">Main Tasks:</h4>
+                <ul class="project-list">
+                    <li>Create/edit an account</li>
+                    <li>Take onboarding quiz and set safety preferences</li>
+                    <li>Join or create trusted groups for family, friends, or roommates</li>
+                    <li>Set up arrival locations, alerts, and notification rules</li>
+                    <li>Share trip status and approximate location with selected groups</li>
+                    <li>View recent check-ins and trip history for peace of mind</li>
+                    <li>Manage alert frequency, quiet times, and battery-sensitive behaviors</li>
+                    <li>Contact support, review safety tips, and read FAQs</li>
+                </ul>
+                <p class="project-text">
+                    <strong>Flow Highlights:</strong> Users set up trusted groups and key locations during onboarding so
+                    the app only focuses on what matters most. They can then adjust sharing modes, receive arrival
+                    notifications, view recent activity, and quickly use emergency tools without exposing constant
+                    precise location.
+                </p>
+                <div class="project-image">
+                    <img src="https://via.placeholder.com/1000x600/f8f8f8/666666?text=User+Flow+Diagram"
+                        alt="User Flow Diagram">
+                </div>
+            </div>
+        </section>
+
+        <!-- Visual Design & Branding -->
+        <section class="project-section">
+            <div class="container project-container">
+                <h3 class="project-section-title">Visual Design & Branding</h3>
+                <p class="project-text">
+                    I designed a modular, clean UI system to support both trip awareness and quick response:
+                </p>
+                <ul class="project-list">
+                    <li>Built a full color system with blues, greens, warning tones, and neutral grays to create
+                        hierarchy and visual balance</li>
+                    <li>Designed and tested component variants for buttons, cards, icons, and onboarding steps</li>
+                    <li>Ensured accessible contrast and reusable style tokens for scalable design</li>
+                </ul>
+                <div class="project-image-grid">
+                    <img src="https://via.placeholder.com/480x320/4C5FD5/ffffff?text=Color+Palette" alt="Color Palette">
+                    <img src="https://via.placeholder.com/480x320/f8f8f8/666666?text=Typography" alt="Typography">
+                </div>
+            </div>
+        </section>
+
+        <!-- Key Screens -->
+        <section class="project-section">
+            <div class="container project-container">
+                <h3 class="project-section-title">Key Screens</h3>
+                <ul class="project-list">
+                    <li><strong>Opening & Onboarding:</strong> Clean welcome screen, quiz-based safety and sharing setup
+                    </li>
+                    <li><strong>Home Screen:</strong> Overview of trusted groups, recent arrivals, and active alerts
+                    </li>
+                    <li><strong>Map & List Screens:</strong> Tabs to view approximate locations, key places, and
+                        check-in history</li>
+                    <li><strong>Trip Detail Page:</strong> Focus on route context, last known status, and quick access
+                        to contacts</li>
+                    <li><strong>Alerts & Emergency:</strong> Simple flow for sending alerts, confirming safety, and
+                        triggering help</li>
+                </ul>
+                <div class="project-image-grid">
+                    <img src="https://via.placeholder.com/360x640/4C5FD5/ffffff?text=Onboarding"
+                        alt="Onboarding Screen">
+                    <img src="https://via.placeholder.com/360x640/f8f8f8/666666?text=Home+Screen" alt="Home Screen">
+                    <img src="https://via.placeholder.com/360x640/4C5FD5/ffffff?text=Browse" alt="Browse Screen">
+                </div>
+            </div>
+        </section>
+
+        <!-- Component System -->
+        <section class="project-section">
+            <div class="container project-container">
+                <h3 class="project-section-title">Component System</h3>
+                <p class="project-text">I developed a flexible design system that included:</p>
+                <ul class="project-list">
+                    <li>Button states (normal, hover, active)</li>
+                    <li>Input fields with validation</li>
+                    <li>Status chips and icons for people, groups, and locations</li>
+                    <li>Reusable cards for people, groups, and locations</li>
+                    <li>Visual feedback for onboarding progress, alerts, and selection states</li>
+                </ul>
+                <div class="project-image">
+                    <img src="https://via.placeholder.com/1000x500/f8f8f8/666666?text=Component+Library"
+                        alt="Component Library">
+                </div>
+            </div>
+        </section>
+
+        <!-- Reflection -->
+        <section class="project-section">
+            <div class="container project-container">
+                <h3 class="project-section-title">Reflection</h3>
+                <p class="project-text">
+                    This project pushed me to balance safety information with privacy, especially when designing for
+                    families and friends who want check-ins without feeling constantly watched. I learned a lot about
+                    building scalable design systems, user onboarding, and simplifying recurring alert flows. It's one
+                    of my favorite pieces because of the thoughtful flow and calm, reassuring design I was able to
+                    achieve.
+                </p>
+            </div>
+        </section>
+
+        <!-- Other Projects -->
+        <section class="project-section other-projects">
+            <div class="container project-container">
+                <h3 class="project-section-title">Other Projects</h3>
+                <div class="other-projects-grid">
+                    <a href="barbell-connect.html" class="other-project-card">
+                        <img src="assets/barbell-hero.png" alt="Barbell Connect">
+                        <h4>Barbell Connect</h4>
+                    </a>
+                    <a href="index.html#projects" class="other-project-card">
+                        <img src="https://via.placeholder.com/400x300/f8f8f8/666666?text=View+All"
+                            alt="View All Projects">
+                        <h4>View All Projects</h4>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Orryn Echols. Built with HTML, CSS, and GSAP.</p>
+        </div>
+    </footer>
+
+    <!-- GSAP Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="script.js?v=2"></script>
+</body>
+
+</html>
