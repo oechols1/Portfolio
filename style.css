@@ -730,6 +730,16 @@ img {
     display: block;
 }
 
+.project-detail .project-image {
+    height: auto;
+    overflow: visible;
+}
+
+.project-detail .project-image img {
+    height: auto;
+    object-fit: unset;
+}
+
 .project-image-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
