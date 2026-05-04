@@ -894,3 +894,99 @@ img {
         font-size: 1.5rem;
     }
 }
+/* Resume Modal */
+.resume-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.resume-modal-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    cursor: pointer;
+}
+
+.resume-modal-content {
+    position: relative;
+    background: var(--card-bg);
+    border-radius: 12px;
+    max-width: 900px;
+    max-height: 90vh;
+    overflow-y: auto;
+    padding: 2rem;
+    z-index: 10000;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+.resume-modal-close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: var(--text-color);
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: background 0.2s;
+    z-index: 10001;
+}
+
+.resume-modal-close:hover {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.resume-pages {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.resume-page {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.resume-download-btn {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    background: var(--accent-color, #6366f1);
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: background 0.2s, transform 0.2s;
+}
+
+.resume-download-btn:hover {
+    background: var(--accent-hover, #4f46e5);
+    transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+    .resume-modal-content {
+        max-width: 95%;
+        padding: 1.5rem;
+    }
+}

@@ -165,3 +165,40 @@ gsap.to('.scroll-indicator', {
     },
     opacity: 0
 });
+
+// Resume Modal
+document.addEventListener('DOMContentLoaded', () => {
+    const resumeBtn = document.querySelector('a[href*="resume"]');
+    const resumeModal = document.getElementById('resume-modal');
+    const closeBtn = document.querySelector('.resume-modal-close');
+    const overlay = document.querySelector('.resume-modal-overlay');
+
+    if (resumeBtn && resumeModal) {
+        resumeBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            resumeModal.style.display = 'flex';
+            document.body.style.overflow = 'hidden';
+        });
+
+        if (closeBtn) {
+            closeBtn.addEventListener('click', () => {
+                resumeModal.style.display = 'none';
+                document.body.style.overflow = '';
+            });
+        }
+
+        if (overlay) {
+            overlay.addEventListener('click', () => {
+                resumeModal.style.display = 'none';
+                document.body.style.overflow = '';
+            });
+        }
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && resumeModal.style.display === 'flex') {
+                resumeModal.style.display = 'none';
+                document.body.style.overflow = '';
+            }
+        });
+    }
+});

@@ -40,7 +40,7 @@
                     </div>
                     <div class="button-group">
                         <a href="#projects" class="btn btn-primary">View Projects</a>
-                        <a href="#" class="btn btn-secondary">Resume</a>
+                        <a href="assets/resume.pdf" class="btn btn-secondary">Resume</a>
                     </div>
                     <div class="image-ratio_1x1">
                         <div class="image_cover"></div>
@@ -182,6 +182,19 @@
             <p>&copy; 2025 Orryn Echols. Built with HTML, CSS, and GSAP.</p>
         </div>
     </footer>
+
+    <!-- Resume Modal -->
+    <div id="resume-modal" class="resume-modal" style="display: none;">
+        <div class="resume-modal-overlay"></div>
+        <div class="resume-modal-content">
+            <button class="resume-modal-close" aria-label="Close resume">&times;</button>
+            <div class="resume-pages">
+                <img src="assets/resume-page1.png" alt="Resume Page 1" class="resume-page">
+                <img src="assets/resume-page2.png" alt="Resume Page 2" class="resume-page">
+            </div>
+            <a href="assets/resume.pdf" download="Orryn_Echols_Resume.pdf" class="resume-download-btn">Download Resume (PDF)</a>
+        </div>
+    </div>
 
     <!-- GSAP Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
