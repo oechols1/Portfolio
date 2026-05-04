@@ -6,7 +6,9 @@
       "Bash(git push:*)",
       "Bash(ls /workspace/*.css /workspace/*.html)",
       "Bash(python3:*)",
-      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:8080/)"
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:8080/)",
+      "Bash(mv \"/c/Users/oremo/OneDrive/Desktop/Portfolio/assets/arrived-colors.png.png\" \"/c/Users/oremo/OneDrive/Desktop/Portfolio/assets/arrived-colors.png\")",
+      "Bash(mv \"/c/Users/oremo/OneDrive/Desktop/Portfolio/assets/arrived-typography.png.png\" \"/c/Users/oremo/OneDrive/Desktop/Portfolio/assets/arrived-typography.png\")"
     ]
   }
 }
