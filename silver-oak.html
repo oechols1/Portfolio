@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Silver Oak Contracting - Orryn Echols</title>
+    <link rel="stylesheet" href="style.css?v=2">
+    <script>document.documentElement.setAttribute('data-theme', localStorage.getItem('theme') || 'light');</script>
+    <style>
+        .silver-oak-layout {
+            display: grid;
+            grid-template-columns: 40% 60%;
+            gap: 3rem;
+            align-items: start;
+        }
+
+        .silver-oak-mockup img {
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+            border: 1px solid var(--border-color, rgba(0,0,0,0.08));
+        }
+
+        .silver-oak-details {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 1.5rem 0;
+        }
+
+        .silver-oak-details li {
+            padding: 0.4rem 0;
+            font-size: 0.95rem;
+            color: var(--text-secondary, #666);
+            border-bottom: 1px solid var(--border-color, rgba(0,0,0,0.06));
+        }
+
+        .silver-oak-details li:last-child {
+            border-bottom: none;
+        }
+
+        .silver-oak-details li strong {
+            color: var(--text-color);
+            margin-right: 0.5rem;
+        }
+
+        @media (max-width: 768px) {
+            .silver-oak-layout {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">Orryn Echols</a>
+            <ul class="nav-links">
+                <li><a href="index.html#home" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="index.html#projects" class="nav-link">Projects</a></li>
+                <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="theme-toggle" aria-label="Toggle dark mode">
+                <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+            </button>
+        </div>
+    </nav>
+
+    <main class="project-detail">
+        <!-- Hero Section -->
+        <section class="project-hero">
+            <div class="container">
+                <a href="index.html#projects" class="back-link">← Back to Projects</a>
+                <div class="project-hero-image">
+                    <img src="assets/silver-oak-hero.png" alt="Silver Oak Contracting Hero" class="hero-img-light">
+                    <img src="assets/silver-oak-hero-dark.png" alt="Silver Oak Contracting Hero" class="hero-img-dark">
+                </div>
+            </div>
+        </section>
+
+        <!-- Project Overview -->
+        <section class="project-section">
+            <div class="container project-container">
+                <div class="silver-oak-layout">
+                    <!-- Left: Mockup -->
+                    <div class="silver-oak-mockup">
+                        <img src="assets/silver-oak-mockup.png" alt="Silver Oak Contracting Website Mockup">
+                    </div>
+
+                    <!-- Right: Text -->
+                    <div class="silver-oak-text">
+                        <h3 class="project-section-title">Project Overview</h3>
+                        <ul class="silver-oak-details">
+                            <li><strong>Role:</strong> Front-End Developer</li>
+                            <li><strong>Duration:</strong> 3 weeks</li>
+                            <li><strong>Client:</strong> Silver Oak Contracting</li>
+                            <li><strong>Tech Stack:</strong> HTML, CSS, JavaScript</li>
+                            <li><strong>Type:</strong> Client website template</li>
+                        </ul>
+                        <p class="project-text">
+                            Silver Oak Contracting approached me to design and develop a professional website template
+                            for their structural steel fabrication and erection business. The goal was to create a
+                            modern, trustworthy online presence that showcases their services and projects.
+                        </p>
+                        <p class="project-text">
+                            I developed a responsive single-page website featuring a video hero section, service
+                            breakdowns, project portfolio, and contact form. The design emphasizes industrial strength
+                            and professionalism while maintaining clean, accessible UX.
+                        </p>
+                        <p class="project-text">
+                            The template was delivered as a complete, production-ready codebase that the client could
+                            deploy and customize as needed.
+                        </p>
+                        <a href="https://oechols1.github.io/Silver_Oak_Contracting/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">View Live Site</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Other Projects -->
+        <section class="project-section other-projects">
+            <div class="container project-container">
+                <h3 class="project-section-title">Other Projects</h3>
+                <div class="other-projects-grid">
+                    <a href="barbell-connect.html" class="other-project-card">
+                        <img src="assets/barbell-hero.png" alt="Barbell Connect">
+                        <h4>Barbell Connect</h4>
+                    </a>
+                    <a href="arrived.html" class="other-project-card">
+                        <img src="assets/arrived-hero.png" alt="Arrived">
+                        <h4>Arrived</h4>
+                    </a>
+                    <a href="index.html#projects" class="other-project-card">
+                        <img src="https://via.placeholder.com/400x300/f8f8f8/666666?text=View+All"
+                            alt="View All Projects">
+                        <h4>View All Projects</h4>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Orryn Echols. Built with HTML, CSS, and GSAP.</p>
+        </div>
+    </footer>
+
+    <!-- GSAP Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="script.js?v=2"></script>
+</body>
+
+</html>
