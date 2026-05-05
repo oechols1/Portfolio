@@ -173,82 +173,74 @@ img {
 
 /* Hero Section */
 .hero-section {
-    min-height: 100vh;
+    min-height: 85vh;
     display: flex;
     align-items: center;
     position: relative;
-    padding-top: 80px;
-    padding-bottom: 60px;
+    padding-top: 100px;
+    padding-bottom: 80px;
 }
 
-.grid_5-col {
+.hero-grid {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 2rem;
+    grid-template-columns: 3fr 2fr;
+    gap: 5rem;
     align-items: center;
-    position: relative;
 }
 
-.header {
-    grid-column: 1 / 3;
-    grid-row: 1;
+.hero-text {
     display: flex;
     flex-direction: column;
     gap: 2.5rem;
-    /* z-index: 10; */
-    position: relative;
+}
+
+.hero-heading {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
 }
 
 .heading_h1 {
-    font-size: clamp(4rem, 8vw + 1rem, 8rem);
+    font-size: clamp(5rem, 9vw + 1rem, 10rem);
     font-weight: 540;
-    line-height: 0.5;
-    letter-spacing: -0.03em;
+    line-height: 0.85;
+    letter-spacing: -0.04em;
     margin: 0;
     color: var(--text-color);
 }
 
 .subheading {
     font-weight: 400;
-    font-size: 1.6rem;
-    line-height: 1.6;
-    color: color-mix(in srgb, var(--text-color) 70%, transparent);
-    max-width: 380px;
+    font-size: 1.25rem;
+    line-height: 1.7;
+    color: color-mix(in srgb, var(--text-color) 65%, transparent);
+    max-width: 480px;
     margin: 0;
     text-wrap: balance;
 }
 
 .button-group {
-    grid-column: 1 / 3;
-    grid-row: 2;
     display: flex;
     gap: 16px;
-    /* z-index: 10; */
-    position: relative;
 }
 
-.image-ratio_1x1 {
-    grid-column: 2 / 6;
-    grid-row: 1 / 3;
-    position: relative;
-    width: 100%;
+.hero-photo {
     display: flex;
     justify-content: flex-end;
-    z-index: -1;
+    align-items: center;
 }
 
 .image_cover {
     position: relative;
     overflow: hidden;
-    border-radius: 12px;
+    border-radius: 16px;
     width: 100%;
-    max-width: 736px;
-    height: 894px;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    max-width: 380px;
+    aspect-ratio: 3 / 4;
+    box-shadow: 0 16px 48px rgba(0, 0, 0, 0.18);
     background-image: url('assets/hero-photo.jpg');
     background-size: cover;
-    background-position: center;
-    z-index: -1;
+    background-position: center top;
 }
 
 .image_cover::before {
@@ -501,17 +493,12 @@ img {
 
 /* Responsive Design */
 @media (max-width: 1024px) {
-    .grid_5-col {
-        padding: 0 60px 0 60px;
-    }
-
-    .image-ratio_1x1 {
-        margin-right: -60px;
+    .hero-grid {
+        gap: 3rem;
     }
 
     .image_cover {
-        max-width: 600px;
-        height: 728px;
+        max-width: 320px;
     }
 }
 
@@ -520,44 +507,33 @@ img {
         padding: 0 40px;
     }
 
-    .grid_5-col {
+    .hero-grid {
         grid-template-columns: 1fr;
-        gap: 2rem;
-        padding: 0 40px;
+        gap: 2.5rem;
+        text-align: center;
     }
 
-    .header {
-        grid-column: 1;
-        grid-row: 1;
-        text-align: center;
+    .hero-photo {
+        justify-content: center;
+        order: 2;
     }
 
     .heading_h1 {
         font-size: 3.5rem;
+        line-height: 0.9;
     }
 
     .subheading {
         max-width: 100%;
+        font-size: 1.1rem;
     }
 
     .button-group {
-        grid-column: 1;
-        grid-row: 3;
         justify-content: center;
-        margin-top: 0;
-    }
-
-    .image-ratio_1x1 {
-        grid-column: 1;
-        grid-row: 2;
-        justify-content: center;
-        margin-right: 0;
     }
 
     .image_cover {
-        max-width: 100%;
-        width: 100%;
-        height: 600px;
+        max-width: 260px;
     }
 
     .nav-links {
@@ -568,10 +544,6 @@ img {
 @media (max-width: 480px) {
     .container {
         padding: 0 24px;
-    }
-
-    .grid_5-col {
-        padding: 0;
     }
 
     .skills-banner {
@@ -589,8 +561,8 @@ img {
         padding-bottom: 60px;
     }
 
-    .grid_5-col {
-        gap: 1.5rem;
+    .hero-grid {
+        gap: 2rem;
     }
 
     .heading_h1 {
@@ -602,7 +574,7 @@ img {
     }
 
     .image_cover {
-        height: 500px;
+        max-width: 220px;
     }
 
     .button-group {
